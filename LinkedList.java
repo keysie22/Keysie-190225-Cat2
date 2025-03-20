@@ -1,7 +1,7 @@
 class LinkedList {
-    Node head; // Head (first node) of the linked list
+    Node head; 
 
-    // Node class
+
     static class Node {
         int data;
         Node next;
@@ -12,14 +12,14 @@ class LinkedList {
         }
     }
 
-    // Insert at the beginning
+    // Inserts at the beginning
     public void insertAtBeginning(int data) {
         Node newNode = new Node(data);
         newNode.next = head;
         head = newNode;
     }
 
-    // Insert at the end
+    // Inserts at the end
     public void insertAtEnd(int data) {
         Node newNode = new Node(data);
         if (head == null) {
@@ -33,7 +33,7 @@ class LinkedList {
         temp.next = newNode;
     }
 
-    // Delete from the beginning
+    // Deletess from the beginning
     public void deleteFromBeginning() {
         if (head == null) {
             System.out.println("List is empty");
@@ -57,9 +57,9 @@ class LinkedList {
         list.insertAtBeginning(10);
         list.insertAtBeginning(20);
         list.insertAtEnd(30);
-        list.display(); // Output: 20 -> 10 -> 30 -> null
+        list.display();
 
         list.deleteFromBeginning();
-        list.display(); // Output: 10 -> 30 -> null
+        list.display(); 
     }
 }
