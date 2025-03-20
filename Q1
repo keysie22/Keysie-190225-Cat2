@@ -1,0 +1,16 @@
+1. With the aid of examples explain the rules of Big O notation in algorithm analysis (5
+marks)
+Focus on the dominant term: Only focus on the dominant term that matters 
+ie  O(n² + n)-> O(n²)
+
+Ignore constants: Lower order terms and also coefficients are irrelevant for larger inputs
+i.eO(2n)->O(n)
+
+input size changes should be considered 
+i.ewhen input size reduces consider logarithmic growth i.e binary searches
+
+Space Complexity 
+Always account for extra memory usage i.e Such as recursion stacks
+
+Drop non-dominant terms 
+Retain the highest term for complexities that are combined i.e O(n+n2+logn)->O(n2)
